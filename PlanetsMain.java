@@ -40,7 +40,7 @@ public class PlanetsMain {
 
         // Remove pluto
         // TODO
-        planets.remove("Pluto");
+       planets.removeIf(p -> p.getName().equals("Pluto"));
                 
         System.out.println("Removed Pluto:");
         printPlanets(planets);
